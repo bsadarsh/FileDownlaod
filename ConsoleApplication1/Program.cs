@@ -10,7 +10,11 @@ namespace FileDownload
     {
         static void Main(string[] args)
         {
+            Logic c = new Logic(new PrintFileDownload());
 
+            c.printFileSize("D:\\TempFolder");
+            c.printFileSizeCount("D:\\TempFolder");
+            Console.ReadLine();
         }
     }
 }
