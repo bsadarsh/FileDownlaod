@@ -11,7 +11,7 @@ namespace FileDownload
     {
         public void FileDirectoryCount(string FilePath)
         {
-            string[] a = Directory.GetFiles(FilePath, "*.*");
+            string[] a = Directory.GetFiles(FilePath, "*.*",SearchOption.AllDirectories);
 
 
             long b = 0;
@@ -28,7 +28,7 @@ namespace FileDownload
         public void FileDirectorySize(string FilePath)
         {
             
-            string[] a = Directory.GetFiles(FilePath, "*.*");
+            string[] a = Directory.GetFiles(FilePath, "*.*",SearchOption.AllDirectories);
 
             
             long b = 0;
